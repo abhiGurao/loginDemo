@@ -22,15 +22,15 @@ export default function(state=initState, action = {}) {
 		}
     case DELETE_ROW:
       newState = { ...state };
-      newState.productData = action.payload.value;
+      newState.employeeData = action.payload.value;
       break;
     case ADD_ROW:
      newState = { ...state };
-     newState.productData.push(action.payload.value);
+     newState.employeeData.push(action.payload.value);
     break;
     case UPDATE_ROW:
     newState = { ...state };
-    newState.productData[action.payload.index] = action.payload.value;
+    newState.employeeData[action.payload.index] = action.payload.value;
       break;
 		default:
 		break;

@@ -1,27 +1,25 @@
 export default {
 	login:{
-		username: ['a','a'],
-		password: ['a', 'a'],
-		username1: '',
-		password1: '',
+		username: ['test@test.com'],
+		password: ['test'],
 		dataValidation: false,
 		errorPopup: false
 	},
-	productData:[{
+	employeeData:[{
 	      id: 1,
-	      name: "Item 1",
-	      price: 100
+	      name: "Name 1",
+	      address: "Address 1"
 	  },{
 	      id: 2,
-	      name: "Item 2",
-	      price: 200
+	      name: "Name 2",
+	      address: "Address 2"
 	  },{
 	      id: 3,
-	      name: "Item 3",
-	      price: 300
+	      name: "Name 3",
+	      address: "Address 3"
 	  },{
 	      id: 4,
-	      name: "Item 4",
-	      price: 400
+	      name: "Name 4",
+	      address: "Address 4"
 	  }]
 }

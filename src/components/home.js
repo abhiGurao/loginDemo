@@ -24,7 +24,8 @@ class Home extends Component {
 
   options = {
     afterInsertRow: this.onAfterInsertRow,
-    afterDeleteRow: this.onAfterDeleteRow
+    afterDeleteRow: this.onAfterDeleteRow,
+    insertText: 'Add Employee',
   };
 
   selectRowProp = {
@@ -39,13 +40,21 @@ class Home extends Component {
 
   render() {
     return(
-    <div>
+    <div className="home-container">
       <h2>Home</h2>
-      <BootstrapTable data={ this.props.productData } cellEdit={ this.cellEditProp } deleteRow={ true } selectRow={ this.selectRowProp }  insertRow={ true } search={ true } options={ this.options }>
-            <TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
-            <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
-            <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
-        </BootstrapTable>
+      <BootstrapTable
+        data={ this.props.employeeData }
+        cellEdit={ this.cellEditProp }
+        deleteRow={ true }
+        selectRow={ this.selectRowProp }
+        insertRow={ true }
+        search={ true }
+        options={ this.options }
+      >
+        <TableHeaderColumn dataField='id' isKey>Employee ID</TableHeaderColumn>
+        <TableHeaderColumn dataField='name'>Employee Name</TableHeaderColumn>
+        <TableHeaderColumn dataField='address'>Employee Address</TableHeaderColumn>
+      </BootstrapTable>
     </div>
     )
   }
@@ -54,9 +63,9 @@ class Home extends Component {
 
 
 function mapStateToProps(state, ownProps) {
-  const { productData } = state;
+  const { employeeData } = state;
   return {
-    productData
+    employeeData
   };
 }
 

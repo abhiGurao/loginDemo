@@ -5,6 +5,7 @@ import LoginPage from '../components/login_page';
 import BasicPage from '../components/about';
 import { username, password, login } from '../redux/actions/index';
 import '../style/bootstrap.css';
+import '../style/react-bootstrap-table.css';
 import '../style/login_page.css';
 
 // container for login and about us components

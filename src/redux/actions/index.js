@@ -48,15 +48,15 @@ export function login(value1, value2) {
 export function deleteRows(rowIds) {
   return (dispatch, getState) => {
     const state  = getState();
-    const { productData } = state;
-    let productDataUpdate = JSON.parse(JSON.stringify(productData));
+    const { employeeData } = state;
+    let employeeDataUpdate = JSON.parse(JSON.stringify(employeeData));
     for (var i = rowIds.length -1; i >= 0; i--) {
-      productDataUpdate.splice(rowIds[i],1);
+      employeeDataUpdate.splice(rowIds[i],1);
     }
     dispatch({
       type: DELETE_ROW,
       payload: {
-        value : productDataUpdate
+        value : employeeDataUpdate
       }
     });
   }
@@ -74,8 +74,8 @@ export function addRow(rowData) {
 export function updateRow(row) {
   return (dispatch, getState) => {
     const state  = getState();
-    const { productData } = state;
-    const updateIndex = productData.findIndex((obj) => {
+    const { employeeData } = state;
+    const updateIndex = employeeData.findIndex((obj) => {
       if(obj.id == row.id) {
           return obj;
       }
