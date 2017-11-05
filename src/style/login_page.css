@@ -1,0 +1,78 @@
+
+input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+body{
+    background-color: #C1E1A6;
+}
+.container {
+    width: 30%;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 2%;
+    background-color: #6f99db;
+    border-radius: 7px;
+    border: 2px solid #6e757f;
+}
+
+ h1{
+     margin-left: 25%;
+    color: #fff;
+}
+
+.tb:hover { 
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.homeTab{
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    background-color: #0064cd;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+a{
+    color: #fff;
+}
+a:hover{
+    color: #0064cd;
+}
+ a:link {
+    text-decoration: none;
+}
+.aboutTab{
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    background-color: #0064cd;
+    border-radius: 5px;
+}
+.infotab{
+    padding: 15px 15px 15px 15px;
+    display: inline-block;
+    background-color: #0064cd;
+    border-radius: 5px;
+    margin-right: 5px; 
+}
